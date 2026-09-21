@@ -1,0 +1,44 @@
+[package]
+name = "instrumentationx"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "可观测性注入点契约：单一对象安全 trait Instrumentation，零依赖，用于解耦观测实现与观测消费方"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/bytechainx/instrumentationx"
+homepage = "https://github.com/bytechainx/instrumentationx"
+documentation = "https://docs.rs/instrumentationx"
+readme = "README.md"
+keywords = ["observability", "instrumentation", "trait", "contract", "telemetry"]
+categories = ["development-tools::debugging"]
+include = [
+    "src/**/*",
+    "tests/**/*",
+    "benches/**/*",
+    "examples/**/*",
+    "docs/**/*",
+    "README.md",
+    "LICENSE-*",
+    "Cargo.toml",
+]
+
+# 本 crate 零依赖：只定义一个对象安全的同步 trait。
+[dependencies]
+
+[dev-dependencies]
+
+[lints.rust]
+private_interfaces = "deny"
+private_bounds = "deny"
+unused_must_use = "warn"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+unreachable = "deny"
+todo = "deny"
+unimplemented = "deny"
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--cfg", "docsrs"]
