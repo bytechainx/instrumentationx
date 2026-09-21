@@ -35,7 +35,7 @@
 /// - 实现必须同时满足 `Send + Sync`。
 /// - 三类方法都不应阻塞调用方：慢后端应由实现方自行做有界缓冲或异步落地。
 ///
-/// # 最小实现
+/// # Examples
 ///
 /// ```
 /// use instrumentationx::Instrumentation;
