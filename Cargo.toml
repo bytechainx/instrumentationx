@@ -7,7 +7,7 @@ description = "可观测性注入点契约：单一对象安全 trait Instrument
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/bytechainx/instrumentationx"
 homepage = "https://github.com/bytechainx/instrumentationx"
-documentation = "https://docs.rs/instrumentationx"
+documentation = "https://github.com/bytechainx/instrumentationx#readme"
 readme = "README.md"
 keywords = ["observability", "instrumentation", "trait", "contract", "telemetry"]
 categories = ["development-tools::debugging"]
@@ -39,6 +39,3 @@ panic = "deny"
 unreachable = "deny"
 todo = "deny"
 unimplemented = "deny"
-
-[package.metadata.docs.rs]
-rustdoc-args = ["--cfg", "docsrs"]
